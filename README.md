@@ -29,6 +29,7 @@ Dynomite’s architecture is designed to provide Netflix-scale performance acros
 
 ## 🧠 What Dynomite Does
 
+![Netflix Logo](images/dynomite-logo.png)
 
 Dynomite transforms single-node data stores (like Redis or Memcached) into a **peer-to-peer distributed system** by adding:
 
@@ -53,24 +54,15 @@ Currently supports:
 
 ---
 
-## 🖼 Architecture Overview
+## 📦 Contents
 
-![Dynomite Architecture](images/dynomite-architecture.png)
-
-> In this architecture, Dynomite nodes communicate across data centers using asynchronous replication. Each node wraps a Redis instance, handling replication and failover transparently.
-
----
-
-## 🧾 Contents
-
-- 📚 [Reading List](./MarkDowns/To-Read.md) — curated research papers, articles, and learning resources.
-- 🗂️ [PDF Folders](./Pdfs) — notes and summaries from deep-dives into Dynomite and distributed systems.
-- 🧠 [Dynomite Explained](./MarkDowns/ExplanationTSPProblem-no1.md) — detailed notes on how Dynomite works.
-- 🧑‍🏫 [About Presentations](./MarkDowns/About-PowerPoint.md) — clean design tips for slides.
-- 🐍 [Python Examples](./Code/Python/) — client test cases, Redis wrappers, and replication tests.
-- 🛠️ [Deployment Examples](./Code/example.m) — coming soon (Docker/K8s deployments).
-
----
+- 🔗 [Official Dynomite Repository](https://github.com/Netflix/dynomite) — Netflix’s open-source Dynomite project.
+<!-- - 📚 [Reading List](./MarkDowns/To-Read.md) — curated papers, articles, and references on Dynomite & distributed systems. -->
+<!-- - 📄 [PDF Notes](./Pdfs) — summaries and insights from deep dives into Dynomite’s internals and architecture. -->
+<!-- - 🧠 [Dynomite Explained](./MarkDowns/ExplanationTSPProblem-no1.md) — technical breakdown of Dynomite’s design and key mechanisms. -->
+<!-- - 🎨 [Presentation Guide](./MarkDowns/About-PowerPoint.md) — tips on slide design, visuals, and formatting for talks. -->
+<!-- - 🐍 [Python Examples](./Code/Python/) — client-side scripts, Redis API interactions, and integration demos. -->
+<!-- - ⚙️ [Deployment Examples](./Code/example.m) — *coming soon*: Docker/Kubernetes-based deployment templates. -->
 
 ## 🔥 Dynomite in Production
 
