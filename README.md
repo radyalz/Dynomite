@@ -27,8 +27,7 @@ Dynomite’s architecture is designed to provide Netflix-scale performance acros
 
 ## 🧠 What Dynomite Does
 
-<img src="images/Netflix_Symbol_RGB.png" alt="Netflix Logo" width="80"/>
-
+<img src="images/Netflix_Symbol_RGB.png" alt="Netflix Logo" width="80" height = "100"/>
 Dynomite transforms single-node data stores (like Redis or Memcached) into a **peer-to-peer distributed system** by adding:
 
 ### ✔️ Peer-to-Peer Gossip-Based Communication
