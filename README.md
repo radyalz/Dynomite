@@ -68,7 +68,7 @@ Currently supports:
 
 Dynomite is used at **Netflix** to power highly-available, multi-region services with consistent, low-latency performance.
 
-![Netflix Logo](images/netflix-logo.png)
+![Netflix Logo](images/NetflixLogo-resized.png)
 
 Other companies exploring Dynomite include:
 
