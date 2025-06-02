@@ -1,13 +1,13 @@
 # 🚀 Dynomite-Project
 
-![GitHub Repo stars](https://img.shields.io/github/stars/radyalz/TSP-Problem?style=social)
-![GitHub forks](https://img.shields.io/github/forks/radyalz/TSP-Problem?style=social)
-![GitHub issues](https://img.shields.io/github/issues/radyalz/TSP-Problem)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/radyalz/TSP-Problem)
-![GitHub last commit](https://img.shields.io/github/last-commit/radyalz/TSP-Problem)
-![GitHub license](https://img.shields.io/github/license/radyalz/TSP-Problem)
-![GitHub language top](https://img.shields.io/github/languages/top/radyalz/TSP-Problem)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/radyalz/TSP-Problem/ci.yml?label=CI&logo=github)
+![GitHub Repo stars](https://img.shields.io/github/stars/radyalz/Dynomite?style=social)
+![GitHub forks](https://img.shields.io/github/forks/radyalz/Dynomite?style=social)
+![GitHub issues](https://img.shields.io/github/issues/radyalz/Dynomite)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/radyalz/Dynomite)
+![GitHub last commit](https://img.shields.io/github/last-commit/radyalz/Dynomite)
+![GitHub license](https://img.shields.io/github/license/radyalz/Dynomite)
+![GitHub language top](https://img.shields.io/github/languages/top/radyalz/Dynomite)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/radyalz/Dynomite/ci.yml?label=CI&logo=github)
 
 ---
 
@@ -39,8 +39,8 @@ Feel free to connect, fork, or contribute ideas!
 
 Want to suggest a feature, deployment tweak, or fix a typo? Open an issue or pull request:
 
-- 🔧 [Create an Issue](https://github.com/radyalz/TSP-Problem/issues)
-- 🔄 [Make a Pull Request](https://github.com/radyalz/TSP-Problem/pulls)
+- 🔧 [Create an Issue](https://github.com/radyalz/Dynomite/issues)
+- 🔄 [Make a Pull Request](https://github.com/radyalz/Dynomite/pulls)
 
 > 🙌 Contributions are welcome — from notes and configs to code snippets and docs!
 
