@@ -11,6 +11,8 @@
 
 ---
 
+![Netflix Logo](images/NetflixLogo-resized.png)
+
 Welcome to an in-depth exploration of **Dynomite** — a high-performance, open-source **distributed in-memory key-value store** built by Netflix.
 
 Dynomite extends the capabilities of Redis or Memcached by adding:
@@ -26,8 +28,6 @@ Dynomite’s architecture is designed to provide Netflix-scale performance acros
 ---
 
 ## 🧠 What Dynomite Does
-
-![Netflix Logo](images/NetflixLogo-resized.png)
 
 
 Dynomite transforms single-node data stores (like Redis or Memcached) into a **peer-to-peer distributed system** by adding:
