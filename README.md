@@ -11,59 +11,118 @@
 
 ---
 
-Welcome to an in-depth exploration of **Dynomite** — a high-performance, open-source distributed in-memory store developed by Netflix.  
-This repo provides insights into Dynomite’s architecture, use-cases, deployment models, and real-world integrations, especially in scalable, fault-tolerant systems.
+Welcome to an in-depth exploration of **Dynomite** — a high-performance, open-source **distributed in-memory key-value store** built by Netflix.
+
+Dynomite extends the capabilities of Redis or Memcached by adding:
+
+- **Cross-region replication**
+- **Fault-tolerant clustering**
+- **High availability**
+- **Pluggable backends**
+- **Eventually consistent storage**
+
+Dynomite’s architecture is designed to provide Netflix-scale performance across global data centers.
+
+---
+
+## 🧠 What Dynomite Does
+
+Dynomite transforms single-node data stores (like Redis or Memcached) into a **peer-to-peer distributed system** by adding:
+
+### ✔️ Peer-to-Peer Gossip-Based Communication
+
+Dynomite uses gossip protocols to share node health and topology across the cluster.
+
+### ✔️ Cross-DC Replication
+
+You can replicate Redis data across different geographical regions with low-latency syncing.
+
+### ✔️ Data Partitioning and Token Ring
+
+Inspired by Cassandra, Dynomite uses virtual nodes and a consistent hash ring for partitioning and load balancing.
+
+### ✔️ Pluggable Storage Engines
+
+Currently supports:
+
+- Redis (most commonly used)
+- Memcached (experimental)
+
+---
+
+## 🖼 Architecture Overview
+
+![Dynomite Architecture](images/dynomite-architecture.png)
+
+> In this architecture, Dynomite nodes communicate across data centers using asynchronous replication. Each node wraps a Redis instance, handling replication and failover transparently.
 
 ---
 
 ## 🧾 Contents
 
-- 📚 [Reading List](./MarkDowns/To-Read.md) — curated research papers, articles, and learning resources on distributed systems and Dynomite.
-- 🗂️ [PDF Folders](./Pdfs) — summaries and notes from deep-dives into Dynomite and related tools.
-- 🧠 [Dynomite Explained (My Understanding)](./MarkDowns/ExplanationTSPProblem-no1.md) — a conceptual overview of Dynomite, how it works, and where it fits.
-- 🧑‍🏫 [About Presentations](./MarkDowns/About-PowerPoint.md) — guidelines for creating clean, effective slides based on this work.
-- 🐍 [Python Examples](./Code/Python/) — test cases, client simulations, and sample integration scripts.
-- 🛠️ [Deployment Examples](./Code/example.m) — coming soon (Docker, Kubernetes, and more).
+- 📚 [Reading List](./MarkDowns/To-Read.md) — curated research papers, articles, and learning resources.
+- 🗂️ [PDF Folders](./Pdfs) — notes and summaries from deep-dives into Dynomite and distributed systems.
+- 🧠 [Dynomite Explained](./MarkDowns/ExplanationTSPProblem-no1.md) — detailed notes on how Dynomite works.
+- 🧑‍🏫 [About Presentations](./MarkDowns/About-PowerPoint.md) — clean design tips for slides.
+- 🐍 [Python Examples](./Code/Python/) — client test cases, Redis wrappers, and replication tests.
+- 🛠️ [Deployment Examples](./Code/example.m) — coming soon (Docker/K8s deployments).
 
 ---
 
-## 🧑‍💼 Author
+## 🔥 Dynomite in Production
 
-> Maintained with ⚙️ and ☕ by **[radyalz](https://github.com/radyalz)**
+Dynomite is used at **Netflix** to power highly-available, multi-region services with consistent, low-latency performance.
 
-Feel free to connect, fork, or contribute ideas!
+![Netflix Logo](images/netflix-logo.png)
+
+Other companies exploring Dynomite include:
+
+- [RocketFuel](https://rocketfuel.com)
+- [Quotient](https://www.quotient.com/)
+- [Various open-source adopters](https://github.com/Netflix/dynomite/network)
 
 ---
 
 ## 🛠 Suggestions / Contributions
 
-Want to suggest a feature, deployment tweak, or fix a typo? Open an issue or pull request:
+Want to suggest a feature, tweak, or fix a typo? Open an issue or a pull request:
 
 - 🔧 [Create an Issue](https://github.com/radyalz/Dynomite/issues)
 - 🔄 [Make a Pull Request](https://github.com/radyalz/Dynomite/pulls)
 
-> 🙌 Contributions are welcome — from notes and configs to code snippets and docs!
+> 🙌 All contributions — from configs and docs to new backends — are welcome!
 
 ---
 
 ## ⭐️ Favorite This Project
 
-If you find this repo useful or interesting, please give it a ⭐️ on GitHub. It helps others discover it!
+If you found this helpful, give it a ⭐️ — it helps more developers discover it!
 
 ---
 
 ## 🧪 Coming Soon
 
-- 🧠 Dynomite Cluster Simulations
+- 🧠 Cluster Simulations
 - 🧰 Docker + Kubernetes Deployment Guides
-- 🌐 Real-time Monitoring and Metrics with Prometheus/Grafana
+- 🌐 Prometheus/Grafana Metrics Monitoring Setup
+- 🧪 Stress-testing scripts
 
 ---
 
 ## 🗂 Folder Structure
 
 ```bash
-└── 📁Dynomite
-    └── LICENSE
-    └── README.md
+📁 Dynomite/
+├── 📁 Code/
+│   └── Python/               # Python test scripts
+├── 📁 MarkDowns/
+│   ├── To-Read.md
+│   ├── ExplanationTSPProblem-no1.md
+│   └── About-PowerPoint.md
+├── 📁 Pdfs/
+├── 📁 images/                # Architecture diagrams, logos, etc.
+│   ├── dynomite-architecture.png
+│   └── netflix-logo.png
+├── LICENSE
+└── README.md
 ```
